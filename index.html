@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothes Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -19,17 +20,56 @@
             <img class = "header__item" src="img/search.svg" alt="search">
         </div>
         <div class="right__header">
-            <img class = "header__item" src="img/menu_icon.svg" alt="menu">
-            <a href="#">
+
+            <!-- *****MENU***** -->
+
+            <input id = "menu__checkbox" type="checkbox" class = "menu__check" >
+            <label for="menu__checkbox">
+                <img class = "header__item" src="img/menu_icon.svg" alt="menu">
+            </label>
+            <nav id = "menu_site" class="menu">
+                <h4 class="menu__heading">MENU</h4>
+                <ul class="main__menu">
+                    <li><a href="#" class="menu__list-parent menu__list" onClick="closeMenuMobile();">MAN</a>
+                        <ul class="sub__menu">
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Bags</a></li>
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Demin</a></li>
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu__list-parent menu__list" onClick="closeMenuMobile();">WOMAN</a>
+                        <ul class="sub__menu">
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Jackets & Coats</a></li>
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Polos</a></li>
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
+                            <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="menu__list-parent menu__list" onClick="closeMenuMobile();">KIDS</a>
+                        <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
+                        <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Jackets & Coats</a></li>
+                        <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Polos</a></li>
+                        <li><a href="#" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
+                        <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Shirts</a></li>
+                        <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Bags</a></li>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- *****MENU***** -->
+
+            <a class = "user__icon" href="#">
                 <img src="img/user_icon.svg" alt="user icon">
             </a>
-            <a href="#">
-                <img src="img/buy_icon.svg" alt="buy icon">
+            <a class = "header__cart" href="#">
+                <img  src="img/buy_icon.svg" alt="buy icon">
             </a>
         </div>
     </header>
-    <section class="top">
-        <img src="img/top_men.png" alt="top img">
+    <section class="top center">
+        <img class = "top__img" src="img/top_men.png" alt="top img">
         <h3 class = "top__heading">
             THE BRAND <span class = "top__heading-mod"><br>OF LUXERIOUS <span class = "top__heading-red">FASHION</span>
         </h3>
@@ -43,20 +83,20 @@
                 </h4>
             </div>
             <div class="row__2-container">
-                <img src="img/row_2-img2.png" alt="row 2 img">
+                <img class = "row__2-img" src="img/row_2-img2.png" alt="row 2 img">
                 <h4 class="row__2-heading">
                     HOT DEAL<br><span class = "row__2-heading__red">FOR MEN</span>
                 </h4>
             </div>
             <div class="row__2-container">
-                <img src="img/row_2-img3.png" alt="row 2 img">
+                <img class = "row__2-img" src="img/row_2-img3.png" alt="row 2 img">
                 <h4 class="row__2-heading">
                     NEW ARRIVALS<br><span class = "row__2-heading__red">FOR KIDS</span>
                 </h4>
             </div>
         </div>
-        <div class="row__2-container">
-            <img src="img/row_2-img4.png" alt="row 2 bottom img">
+        <div class="row__2-container row__2-big__container">
+            <img class = "row__2-big__img" src="img/row_2-img4.png" alt="row 2 bottom img">
             <h4 class="row__2-heading row__2-heading__last">
                 LUXIROUS & TRENDY<br><span class = "row__2-heading__red">ACCESORIES</span>
             </h4>
@@ -67,7 +107,13 @@
         <p class="products__text">Shop for items based on what we featured in this week</p>
         <div class="products__container">
             <div class="products__item">
-                <img src="img/row_3-img1.png" alt="product img">
+                <div class = "product__img">
+                    <img class = "product__picture" src="img/row_3-img1.png" alt="product img">
+                    <div class="add-to-cart">
+                        <img class = "cart" src="img/buy_icon.svg" alt="cart">
+                        <a  class = "add-to-cart__link" href="#">Add to cart</a>
+                    </div>
+                </div>
                 <div class="product__description">
                     <h4 class="product__item-heading">ELLERY X M'O CAPSULE</h4>
                     <p class="product__item-text">
@@ -77,7 +123,13 @@
                 </div>
             </div>
             <div class="products__item">
-                <img src="img/row_3-img2.png" alt="product img">
+                <div class = "product__img">
+                    <img class = "product__picture" src="img/row_3-img2.png" alt="product img">
+                    <div class="add-to-cart">
+                        <img class = "cart" src="img/buy_icon.svg" alt="cart">
+                        <a  class = "add-to-cart__link" href="#">Add to cart</a>
+                    </div>
+                </div>
                 <div class="product__description">
                     <h4 class="product__item-heading">ELLERY X M'O CAPSULE</h4>
                     <p class="product__item-text">
@@ -87,7 +139,13 @@
                 </div>
             </div>
             <div class="products__item">
-                <img src="img/row_3-img3.png" alt="product img">
+                <div class = "product__img">
+                    <img class = "product__picture" src="img/row_3-img3.png" alt="product img">
+                    <div class="add-to-cart">
+                        <img class = "cart" src="img/buy_icon.svg" alt="cart">
+                        <a  class = "add-to-cart__link" href="#">Add to cart</a>
+                    </div>
+                </div>
                 <div class="product__description">
                     <h4 class="product__item-heading">ELLERY X M'O CAPSULE</h4>
                     <p class="product__item-text">
@@ -97,7 +155,13 @@
                 </div>
             </div>
             <div class="products__item">
-                <img src="img/row_3-img4.png" alt="product img">
+                <div class = "product__img">
+                    <img class = "product__picture" src="img/row_3-img4.png" alt="product img">
+                    <div class="add-to-cart">
+                        <img class = "cart" src="img/buy_icon.svg" alt="cart">
+                        <a  class = "add-to-cart__link" href="#">Add to cart</a>
+                    </div>
+                </div>
                 <div class="product__description">
                     <h4 class="product__item-heading">ELLERY X M'O CAPSULE</h4>
                     <p class="product__item-text">
@@ -107,7 +171,13 @@
                 </div>
             </div>
             <div class="products__item">
-                <img src="img/row_3-img5.png" alt="product img">
+                <div class = "product__img">
+                    <img class = "product__picture" src="img/row_3-img5.png" alt="product img">
+                    <div class="add-to-cart">
+                        <img class = "cart" src="img/buy_icon.svg" alt="cart">
+                        <a  class = "add-to-cart__link" href="#">Add to cart</a>
+                    </div>
+                </div>
                 <div class="product__description">
                     <h4 class="product__item-heading">ELLERY X M'O CAPSULE</h4>
                     <p class="product__item-text">
@@ -117,7 +187,13 @@
                 </div>
             </div>
             <div class="products__item">
-                <img src="img/row_3-img6.png" alt="product img">
+                <div class = "product__img">
+                    <img class = "product__picture" src="img/row_3-img6.png" alt="product img">
+                    <div class="add-to-cart">
+                        <img class = "cart" src="img/buy_icon.svg" alt="cart">
+                        <a  class = "add-to-cart__link" href="#">Add to cart</a>
+                    </div>
+                </div>
                 <div class="product__description">
                     <h4 class="product__item-heading">ELLERY X M'O CAPSULE</h4>
                     <p class="product__item-text">
@@ -129,5 +205,15 @@
         </div>
         <button class = "products__button">Browse All Product</button>
     </section>
+    <script>
+        let menuCheckbox = document.getElementById("menu__checkbox");
+
+        function closeMenuMobile() {
+            let menuMobile = document.getElementById("menu_site");
+            menuMobile.style.right = '-232px';
+            menuMobile.style.transition = 'right 1s';
+            menuCheckbox.checked = false;
+    }
+    </script>
 </body>
 </html>
