@@ -378,14 +378,20 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: normal; 
+    min-height: 99px;
 }
 
-.contact__us-form{
-    max-width: 557px;
+.contact__us-subtext{
+    font-style: italic;
+}
+
+.contact__us-form__container{
+    width: 557px;
     display: flex;
     flex-direction: column;
     gap: 32px;
     justify-content: center;
+    align-items: center;
 }
 
 .contact__us-heading{
@@ -403,6 +409,11 @@ a{
     font-weight: 400; 
 }
 
+.contact__us-form{
+    display: flex;
+    gap:0;
+}
+
 .contact__us-form__input{
     background-color: #E1E1E1;
     border: none;
@@ -415,6 +426,27 @@ a{
     font-weight: 400;
     line-height: normal;
     opacity: 0.6710000038146973;  
+}
+
+.contact__us-form__button{
+    border: 1px solid #F16D7F;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 11px 21px 10px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #F16D7F;
+}
+
+.contact__us-form__button:hover{
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    background: #fff;
+    cursor: pointer;
 }
 
 @media(max-width: 1200px) and (min-width: 1041px){
@@ -497,6 +529,21 @@ a{
 
     .advantages__item{
         max-width: 360px;
+    }
+
+    .contact__us {
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 55px;
+        padding-bottom: 140px;
+    }
+
+    .contact__us-form__container {
+        gap: 27px;
+    }
+
+    .contact__us-heading{
+        line-height: 162%;
     }
 }
 
@@ -617,5 +664,37 @@ a{
 
     .advantages__img{
         max-width: 45px;
+    }
+
+    .contact__us {
+        gap: 59px;
+        padding-top: 54px;
+        padding-bottom: 110px;
+    }
+
+    .contact__us-figure {
+        gap: 34px;
+    }
+
+    .contact__us-text {
+        min-height: auto;
+        font-size: 18px; 
+    }
+
+    .contact__us-form__container {
+        gap: 22px;
+        width: auto;
+    }
+
+    .contact__us-heading {
+        line-height: 26px;
+    }
+
+    .contact__us-subheading {
+        font-size: 14px;
+    }
+
+    .contact__us-form__input {
+        padding-right: 0;
     }
 }
