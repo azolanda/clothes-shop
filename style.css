@@ -167,7 +167,7 @@ a{
 }
 
 .products{
-    padding-bottom: 60px;
+    padding-bottom: 95px;
 }
 
 .products__heading{
@@ -297,6 +297,126 @@ a{
     background-color: #F26376;
 }
 
+.advantages{
+    background-color: #222224;
+    padding-top: 104px;
+    padding-bottom: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.advantages__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advantages__heading{
+    color: #FBFBFB;
+    font-size: 19.96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 28px;
+    padding-bottom: 18px;
+}
+
+.advantages__item .product__item-text{
+    color: #FBFBFB;
+    text-align: center;
+}
+
+.contact__us{
+    padding-top: 87px;
+    padding-bottom: 126px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__us::after{
+    content: "";
+    background-image: url(img/contact__us-background.png);
+    background-position: left;
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact__us-figure{
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact__us-img_container {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    background-image: url(img/contact__us-img.png);
+    background-position: center -8px;
+    background-repeat: no-repeat;
+}
+
+.contact__us-text{
+    color: #222224;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.contact__us-form{
+    max-width: 557px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+}
+
+.contact__us-heading{
+    color: #222224;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 167.2%;
+}
+
+.contact__us-subheading{
+    font-size: 18px;
+    font-weight: 400; 
+}
+
+.contact__us-form__input{
+    background-color: #E1E1E1;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 12px 64px 11px 22px;
+    color: #222224;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6710000038146973;  
+}
+
 @media(max-width: 1200px) and (min-width: 1041px){
     .center{
         padding-left: calc(50% - 500px);
@@ -366,6 +486,17 @@ a{
         grid-template-columns: repeat(2, 48.98%);
         grid-column-gap: 16px;
         grid-row-gap: 18px;
+    }
+
+    .advantages{
+        padding-top: 48px;
+        padding-bottom: 64px;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    .advantages__item{
+        max-width: 360px;
     }
 }
 
@@ -473,5 +604,18 @@ a{
 
     .product__item-cost {
         padding-top: 18px;
+    }
+
+    .advantages{
+        padding-bottom: 81px;
+        gap: 47px;
+    }
+
+    .advantages__item{
+        max-width: 348px;
+    }
+
+    .advantages__img{
+        max-width: 45px;
     }
 }
