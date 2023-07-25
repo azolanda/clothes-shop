@@ -449,6 +449,46 @@ a{
     cursor: pointer;
 }
 
+.footer__main{
+    background-color:  #222224;
+    padding-top: 24px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__text{
+    color: #FBFBFB;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+.footer__right{
+    display: flex;
+    gap:7px;
+}
+
+.footer__right-item{
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__right-item:hover{
+    background-color: #F16D7F;
+    cursor: pointer;
+}
+
+.footer__right-item:hover path{
+    fill: #fff;
+}
+
 @media(max-width: 1200px) and (min-width: 1041px){
     .center{
         padding-left: calc(50% - 500px);
@@ -696,5 +736,12 @@ a{
 
     .contact__us-form__input {
         padding-right: 0;
+    }
+
+    .footer__main {
+        flex-direction: column-reverse;
+        padding-top: 43px;
+        padding-bottom: 9px;
+        gap: 40px;
     }
 }
