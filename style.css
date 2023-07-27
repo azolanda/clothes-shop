@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+input{
+    all:unset;
+}
+
 body{
     font-family: 'Lato', sans-serif;
     /* font-family: 'Roboto', sans-serif; */
@@ -428,16 +432,29 @@ a{
 
 .contact__us-form__input{
     background-color: #E1E1E1;
-    border: none;
+    border: 1px solid #E1E1E1;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    padding: 12px 64px 11px 22px;
+    padding: 11px 63px 10px 21px;
     color: #222224;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    opacity: 0.6710000038146973;  
+    opacity: 0.6710000038146973;
+    transition: border 0.3s;  
+}
+
+.contact__us-form__input:hover{
+    border: 1px solid #F16D7F;
+}
+
+.contact__us-form__input:active{
+    border: 1px solid #F16D7F;
+}
+
+.contact__us-form__input:focus{
+    border: 1px solid #F16D7F;
 }
 
 .contact__us-form__button{
