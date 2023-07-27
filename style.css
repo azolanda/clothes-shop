@@ -39,7 +39,14 @@ a{
 .header__item{
     cursor: pointer;
     align-self: center;
-    height: 27px;
+}
+
+.header__item path{
+    transition: fill 0.3s;
+}
+
+.header__item:hover path{
+    fill: #F16D7F;
 }
 
 .right__header {
@@ -124,6 +131,7 @@ a{
     cursor: pointer;
     width: 31.58%;
     line-height: 0;
+    transition: opacity 0.3s;
 }
 
 .row__2-container:hover{
@@ -209,6 +217,7 @@ a{
 
 .product__picture{
     width: 100%;
+    transition: all 0.3s;
 }
 
 .product__img img:hover:not(.cart), .products__item:hover img:not(.cart){
@@ -262,7 +271,6 @@ a{
 
 .product__item-text{
     color: #5D5D5D;
-    font-family: Lato;
     font-size: 14px;
     font-style: normal;
     font-weight: 300;
@@ -290,6 +298,7 @@ a{
     display: flex;
     background: #fff;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .products__button:hover{
@@ -398,7 +407,6 @@ a{
 .contact__us-heading{
     color: #222224;
     text-align: center;
-    font-family: Lato;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -441,6 +449,7 @@ a{
     font-weight: 400;
     line-height: normal;
     background-color: #F16D7F;
+    transition: all 0.3s;
 }
 
 .contact__us-form__button:hover{
@@ -479,6 +488,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s;
 }
 
 .footer__right-item:hover{
@@ -488,6 +498,10 @@ a{
 
 .footer__right-item:hover path{
     fill: #fff;
+}
+
+.footer__right-item path{
+    transition: fill 0.2s;
 }
 
 @media(max-width: 1200px) and (min-width: 1041px){
