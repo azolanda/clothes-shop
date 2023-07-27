@@ -235,6 +235,12 @@ a{
     transform: translate(-50%, -50%);
 }
 
+.add-to-cart:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color:#fff;
+}
+
 .product__img:hover .add-to-cart, .products__item:hover .add-to-cart{
     display: flex;
     justify-content: center;
@@ -250,11 +256,6 @@ a{
     display: flex;
     align-items: center;
     gap: 11px;
-}
-
-.add-to-cart__link:hover{
-    text-decoration: underline;
-    text-underline-offset: 5px;
 }
 
 .product__description{
