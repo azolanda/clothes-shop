@@ -130,7 +130,7 @@
         display: flex;
         justify-content: center;
         gap: 23px;
-        padding-bottom: 48px;
+        padding-bottom: 43px;
     }
 
     &-summary{
@@ -142,6 +142,7 @@
         list-style-type: none;
         display: flex;
         align-items: center;
+        padding-bottom: 5px;
     }
 
     &-summary::after{
@@ -179,34 +180,39 @@
         display: flex;
         gap: 15px;
         position: absolute;
-        padding-top: 10px;
+        // padding-top: 10px;
+        padding: 10px;
+        flex-direction: column;
+        background: white;
+        width: 110px;
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+    }
+
+    &-input__group{
+        display: flex;
+        gap: 10px;
     }
 
     &-input{
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-        border: 2px solid #999;
+        width: 13px;
+        height: 13px;
+        border: 1px solid #EBEBEB;
         transition: 0.2s all linear;
-        margin-right: -10px;
         cursor: pointer;
     }
 
     &-input:checked {
-        border: 2px solid $colorSelection;
-        background-color: $colorSelection;
+        border: 1px solid $colorSelection;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &-input:checked::before{
-        content: '';
-        border: 4px solid #fff;
-        border-radius: 50%;
+        content: "✓";
         position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+        color: #F16D7F;
     }
 
     &-label{
