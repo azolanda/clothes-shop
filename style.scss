@@ -206,8 +206,7 @@ a{
         padding-top: 48px;
         padding-bottom: 48px;
         display: grid;
-        // grid-template-columns: repeat(3, 31.58%);
-        grid-template-columns: repeat(3, 31.3%);
+        grid-template-columns: repeat(3, 31.58%);
         grid-column-gap: 30px;
         grid-row-gap: 25px;
     }
@@ -547,6 +546,10 @@ a{
         &-mod {
             font-size: 28px;
         }
+    }
+
+    .products__container{
+        grid-template-columns: repeat(3, 31.3%);
     }
 }
 
