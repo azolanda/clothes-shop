@@ -33,12 +33,12 @@
 }
 
 :host([open]) summary, :host([open]) slot[name="internal-main-summary"]::slotted(summary) {
-    color: #F16D7F;
+    color: $colorSelection;
     cursor: pointer;
 }
 
 summary, slot[name="internal-main-summary"]::slotted(summary) {
-    color: #F16D7F;
+    color: $colorSelection;
     cursor: pointer;
 }
 
@@ -63,7 +63,7 @@ summary, slot[name="internal-main-summary"]::slotted(summary) {
 }
 
 .menu__list-parent{
-    color: #F16D7F;
+    color: $colorSelection;
     display: inline-block;
     padding-left: 0;
     padding-bottom: 12px;
