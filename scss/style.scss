@@ -1,4 +1,6 @@
 $colorSelection: #F16D7F;
+$catalogColumnWidth: 31.58%;
+$catalogColumnGap: 30px;
 
 *{
     margin: 0;
@@ -17,6 +19,13 @@ body{
 a{
     text-decoration: none;
 }
+summary{
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
 
 .center{
     padding-left: calc(50% - 570px);
@@ -33,7 +42,7 @@ a{
     /* width: 100vw; */
     width: 100%;
     max-height: 75px;
-    z-index: 1;
+    z-index: 999;
 
     &__left{
         display: flex;
@@ -206,8 +215,8 @@ a{
         padding-top: 48px;
         padding-bottom: 48px;
         display: grid;
-        grid-template-columns: repeat(3, 31.58%);
-        grid-column-gap: 30px;
+        grid-template-columns: repeat(3, $catalogColumnWidth);
+        grid-column-gap: $catalogColumnGap;
         grid-row-gap: 25px;
     }
 
@@ -803,3 +812,4 @@ a{
 
 @import "menu";
 @import "product";
+@import "catalog";
