@@ -1,0 +1,211 @@
+.cart__content{
+    padding-top: 96px;
+    padding-bottom: 128px;
+    display: flex;
+    justify-content: space-between;
+    gap: 128px;
+
+    &-items{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &-item{
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13); 
+    }
+
+    &-img__box{
+        width: 22.982456vw;
+        align-self: center;
+    }
+
+    &-img{
+        width: 100%;
+        display: block;
+    }
+
+    &-description{
+        padding: 15px 22px 22px 31px;
+        display: flex;
+        justify-content: space-between;
+        gap: 57px;
+    }
+
+    &-heading{
+        color: #222;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        display: block;
+        padding-bottom: 42px;
+
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
+    }
+
+    &-text{
+        color: #575757;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+
+    &-text:not(:last-child){
+        padding-bottom: 6px;
+    }
+    
+    &-text__red{
+        color: #EF5B70;
+    }
+
+    &-quantity{
+        border: 1px solid #EAEAEA;
+        padding: 2px 17px;
+        margin-left: 24px;
+    }
+
+    &-close {
+        margin-top: 5px;
+    }
+
+    &-button__box{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 72px;
+    }
+
+    &-button{
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        padding: 17px 40px;
+        border: 1px solid #A4A4A4;
+        transition: all 0.3s;
+
+        &:hover{
+            color: #fff;
+            border-color:$colorSelection;
+            background: $colorSelection;
+            cursor: pointer;
+        }
+    }
+
+    &-form{
+        &__fieldset{
+            all:unset;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__legend{
+            padding-bottom: 20px;
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        &__input{
+            border: 1px solid #A4A4A4;
+            padding: 16px 17px;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: $colorSelection;
+            }
+        }
+
+        &__button{
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            padding: 12px 15px;
+            border: 1px solid #A4A4A4;
+            align-self: flex-start;
+            transition: all 0.3s;
+
+            &:hover{
+                color: #fff;
+                border-color:$colorSelection;
+                background: $colorSelection;
+                cursor: pointer;
+            }
+        }
+
+        &__cost{
+            background-color: #F5F3F3;
+            margin-top: 57px;
+            padding: 39px 43px 43px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &__subtotal{
+            color: #4A4A4A;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-bottom: 12px;
+
+            &-span{
+                padding-left: 20px;
+            }
+        }
+
+        &__grandtotal{
+            color: #222;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal; 
+        }
+
+        &__grandtotal .cart__content-text__red{
+            padding-left: 20px;
+        }
+
+        &__hr{
+            color: #E2E2E2;
+            height: 1px;
+            width: 100%;
+            margin-top: 21px;
+            margin-bottom: 17px;
+        }
+
+        &__submit{
+            all:unset;
+            border: 1px solid $colorSelection;
+            background-color: $colorSelection;
+            padding: 16px 40px;
+            color: #FFF;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            text-transform: capitalize;
+            transition: all 0.3s;
+
+            &:hover{
+                color: $colorSelection;
+                border: 1px solid $colorSelection;
+                background: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
