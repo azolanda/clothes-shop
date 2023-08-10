@@ -31,6 +31,10 @@
         gap: 21px;
     }
 
+    &__input:focus{
+        border-color: #F16D7F;
+    }
+    
     &__input{
         border: 1px solid #A4A4A4;
         padding: 16px 17px;
@@ -42,16 +46,36 @@
             padding: 8.5px;
             border-radius: 50%;
 
+            &:hover{
+                border-color: #F16D7F;
+            }
+
+            &:hover+.registration__label{
+                color: #F16D7F;
+            }
+
+            &:focus{
+                border-color: initial;
+            }
+
+            &:checked{
+                border-color: #F16D7F;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             &:checked::before{
-                border: 2px double red;
+                content: "";
+                position: absolute;
                 border-radius: 50%;
-                z-index: 111;
+                display: block;
+                width: 11px;
+                height: 11px;
+                background-color: #F16D7F;
             }
         }
-    }
-
-    &__input:focus{
-        border-color: #F16D7F;
     }
 
     &__radio{
@@ -61,15 +85,25 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        // cursor: pointer;
+        cursor: pointer;
     }
 
     &__label{
-        // cursor: pointer;
-    }
+        cursor: pointer;
 
-    &__label:not(:last-child){
-        padding-right: 10px;
+        all: unset;
+
+        &:not(:last-child){
+            padding-right: 10px;
+        }
+
+        &:hover{
+            color: #F16D7F;
+        }
+
+        &:hover .registration__input-radio{
+            border-color: #F16D7F;
+        }
     }
 
     &__button{

@@ -1359,6 +1359,9 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   flex-direction: column;
   gap: 21px;
 }
+.registration__input:focus {
+  border-color: #F16D7F;
+}
 .registration__input {
   border: 1px solid #A4A4A4;
   padding: 16px 17px;
@@ -1370,13 +1373,30 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   padding: 8.5px;
   border-radius: 50%;
 }
-.registration__input-radio:checked::before {
-  border: 2px double red;
-  border-radius: 50%;
-  z-index: 111;
-}
-.registration__input:focus {
+.registration__input-radio:hover {
   border-color: #F16D7F;
+}
+.registration__input-radio:hover + .registration__label {
+  color: #F16D7F;
+}
+.registration__input-radio:focus {
+  border-color: initial;
+}
+.registration__input-radio:checked {
+  border-color: #F16D7F;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration__input-radio:checked::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  display: block;
+  width: 11px;
+  height: 11px;
+  background-color: #F16D7F;
 }
 .registration__radio {
   padding-top: 34px;
@@ -1385,9 +1405,20 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+}
+.registration__label {
+  cursor: pointer;
+  all: unset;
 }
 .registration__label:not(:last-child) {
   padding-right: 10px;
+}
+.registration__label:hover {
+  color: #F16D7F;
+}
+.registration__label:hover .registration__input-radio {
+  border-color: #F16D7F;
 }
 .registration__button {
   border: 1px solid #F16D7F;
