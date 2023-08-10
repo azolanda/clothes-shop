@@ -1,0 +1,132 @@
+.registration{
+    &__content{
+        padding-top: 64px;
+        padding-bottom: 96px;
+        display: flex;
+        justify-content: space-between;
+        gap: 128.51px;
+        color: #222;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal; 
+    }
+
+    &__fieldset{
+        all: unset;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__fieldset:last-of-type{
+        padding-bottom: 39px;
+    }
+    &__legend{ 
+        padding-bottom: 20px;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        gap: 21px;
+    }
+
+    &__input{
+        border: 1px solid #A4A4A4;
+        padding: 16px 17px;
+        transition: border-color 0.3s;
+        color: #B1B1B1;
+        font-size: 13px;
+
+        &-radio{
+            padding: 8.5px;
+            border-radius: 50%;
+
+            &:checked::before{
+                border: 2px double red;
+                border-radius: 50%;
+                z-index: 111;
+            }
+        }
+    }
+
+    &__input:focus{
+        border-color: #F16D7F;
+    }
+
+    &__radio{
+        padding-top: 34px;
+        padding-bottom: 34px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        // cursor: pointer;
+    }
+
+    &__label{
+        // cursor: pointer;
+    }
+
+    &__label:not(:last-child){
+        padding-right: 10px;
+    }
+
+    &__button{
+        border: 1px solid #F16D7F;
+        background-color: #F16D7F;
+        padding: 16px 28px;
+        color: #FFF;
+        font-size: 14px;
+        font-weight: 400;
+        text-transform: capitalize;
+        transition: all 0.3s;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        &:hover{
+            color: #F16D7F;
+            border: 1px solid #F16D7F;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        &:hover path{
+            fill: #F16D7F;
+        }
+    }
+
+    &__right{
+        font-size: 24px; 
+        max-width: 55.726495%;
+    }
+
+    &__heading{
+        all: unset;
+    }
+
+    &__text{
+        padding-top: 22px;
+        padding-bottom: 22px;
+
+        &-mini{
+            color: #B1B1B1;
+            font-size: 13px; 
+            padding-top: 16px;
+        }
+    }
+
+    &__li{
+        list-style-type: none;
+    }
+
+    &__li:not(:last-child){
+        padding-bottom: 16px;
+    }
+
+    &__li::before{
+        content: url(../img/registration_marker.svg);
+        padding-right: 23px;
+    }
+}

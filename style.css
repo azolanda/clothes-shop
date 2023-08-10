@@ -1329,4 +1329,111 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   border: 1px solid #F16D7F;
   background: #fff;
   cursor: pointer;
+}
+
+.registration__content {
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+  gap: 128.51px;
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.registration__fieldset {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+}
+.registration__fieldset:last-of-type {
+  padding-bottom: 39px;
+}
+.registration__legend {
+  padding-bottom: 20px;
+}
+.registration__box {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.registration__input {
+  border: 1px solid #A4A4A4;
+  padding: 16px 17px;
+  transition: border-color 0.3s;
+  color: #B1B1B1;
+  font-size: 13px;
+}
+.registration__input-radio {
+  padding: 8.5px;
+  border-radius: 50%;
+}
+.registration__input-radio:checked::before {
+  border: 2px double red;
+  border-radius: 50%;
+  z-index: 111;
+}
+.registration__input:focus {
+  border-color: #F16D7F;
+}
+.registration__radio {
+  padding-top: 34px;
+  padding-bottom: 34px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.registration__label:not(:last-child) {
+  padding-right: 10px;
+}
+.registration__button {
+  border: 1px solid #F16D7F;
+  background-color: #F16D7F;
+  padding: 16px 28px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  transition: all 0.3s;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.registration__button:hover {
+  color: #F16D7F;
+  border: 1px solid #F16D7F;
+  background: #fff;
+  cursor: pointer;
+}
+.registration__button:hover path {
+  fill: #F16D7F;
+}
+.registration__right {
+  font-size: 24px;
+  max-width: 55.726495%;
+}
+.registration__heading {
+  all: unset;
+}
+.registration__text {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.registration__text-mini {
+  color: #B1B1B1;
+  font-size: 13px;
+  padding-top: 16px;
+}
+.registration__li {
+  list-style-type: none;
+}
+.registration__li:not(:last-child) {
+  padding-bottom: 16px;
+}
+.registration__li::before {
+  content: url(../img/registration_marker.svg);
+  padding-right: 23px;
 }/*# sourceMappingURL=style.css.map */
