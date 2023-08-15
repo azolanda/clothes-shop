@@ -47,10 +47,10 @@
                                 <span class="menu__list-parent menu__list">MAN</span>
                             </summary>
                             <ul class="sub__menu">
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Bags</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Demin</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Bags</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Demin</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
                             </ul>
                         </details>
                     </li>
@@ -60,11 +60,11 @@
                                 <span class="menu__list-parent menu__list">WOMAN</span>
                             </summary>
                             <ul class="sub__menu">
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Jackets & Coats</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Polos</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Shirts</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Jackets & Coats</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Polos</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Shirts</a></li>
                             </ul>
                         </details>
                     </li>
@@ -74,12 +74,12 @@
                                 <span class="menu__list-parent menu__list">KIDS</span>
                             </summary>
                             <ul class="sub__menu">
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Jackets & Coats</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Polos</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Shirts</a></li>
-                                <li><a href="#" class="menu__list" onClick="closeMenuMobile();">Bags</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Accessories</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Jackets & Coats</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Polos</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">T-Shirts</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Shirts</a></li>
+                                <li><a href="catalog.html" class="menu__list" onClick="closeMenuMobile();">Bags</a></li>
                             </ul>
                         </details>
                     </li>
@@ -160,17 +160,21 @@
             <form action="#" class="cart__form">
                 <fieldset class = "cart__content-form__fieldset">
                     <legend class = "cart__content-form__legend">SHIPPING ADRESS</legend>
-                    <input class = "cart__content-form__input" type="text" placeholder="Bangladesh" required>
-                    <input class = "cart__content-form__input" type="text" placeholder="State" required>
-                    <input class = "cart__content-form__input" type="text" placeholder="Postcode / Zip" required>
-                    <a href="#" class="cart__content-form__button">GET A QUOTE</a>
+                    <div class="cart__content-form__group">
+                        <div class="cart__content-form__inputgroup">
+                            <input class = "cart__content-form__input" type="text" placeholder="Bangladesh" required>
+                            <input class = "cart__content-form__input" type="text" placeholder="State" required>
+                            <input class = "cart__content-form__input" type="text" placeholder="Postcode / Zip" required>
+                            <a href="#" class="cart__content-form__button">GET A QUOTE</a>
+                        </div>
+                        <div class="cart__content-form__cost">
+                            <p class = "cart__content-form__subtotal">SUB TOTAL <span class = cart__content-form__subtotal-span>$900</span></p>
+                            <p class = "cart__content-form__grandtotal">GRAND TOTAL <span class = "cart__content-text__red">$900</span></p>
+                            <hr class = "cart__content-form__hr">
+                            <button type="submit" class = "cart__content-form__submit">PROCEED&nbsp;TO&nbsp;CHECKOUT</button>
+                        </div>
+                    </div>
                 </fieldset>
-                <div class="cart__content-form__cost">
-                    <p class = "cart__content-form__subtotal">SUB TOTAL <span class = cart__content-form__subtotal-span>$900</span></p>
-                    <p class = "cart__content-form__grandtotal">GRAND TOTAL <span class = "cart__content-text__red">$900</span></p>
-                    <hr class = "cart__content-form__hr">
-                    <button type="submit" class = "cart__content-form__submit">PROCEED&nbsp;TO&nbsp;CHECKOUT</button>
-                </div>
             </form>
         </div>
     </section>

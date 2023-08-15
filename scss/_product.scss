@@ -15,6 +15,23 @@
         text-transform: capitalize; 
     }
 
+    &__ul{
+        list-style-type: none;
+        display: flex;
+    }
+
+    &__li {
+        display: flex;
+        align-items: center;
+    }
+
+    &__li:not(:last-of-type)::after{
+        content: '/';
+        padding-left: 5px;
+        padding-right: 5px;
+        color: #636363;
+    }
+
     &__nav-link{
         color: #636363;
         font-size: 14px;
@@ -23,11 +40,12 @@
         line-height: normal; 
     }
 
-    &__nav-link:not(:last-of-type)::after{
-        content: ' / ';
+    &__nav-link:hover{
+        text-decoration: underline;
+        text-underline-offset: 5px;
     }
 
-    &__nav-link:last-child{
+    &__li:last-of-type .breadcrumbs__nav-link{
         font-weight: 700;
         color: $colorSelection;
     }
@@ -89,6 +107,7 @@
     }
 
     &-devider{
+        all: unset;
         width: 63px;
         height: 3px;
         margin-top: 12px;
@@ -123,7 +142,16 @@
         font-style: normal;
         font-weight: 300;
         line-height: normal;
-        padding-bottom: 130px;
+    }
+
+    &-seconddevider{
+        all: unset;
+        margin-top: 65px;
+        margin-bottom: 65px;
+        width: 60%;
+        height: 1px;
+        color: #EAEAEA;
+        background: #EAEAEA;
     }
 
     &-choose__parameters{
@@ -166,8 +194,8 @@
     }
 
     &-add-to-cart:hover{
-        text-decoration: underline;
-        text-underline-offset: 5px;
+        // text-decoration: underline;
+        // text-underline-offset: 5px;
         color: #fff;
         background-color: #F26376;
     }
@@ -241,4 +269,40 @@
 
 .products__product-page{
     padding-bottom: 80px;
+}
+
+@media(max-width: 1024px){
+    .main__product{
+        &-background {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        &-description{
+            border: none;
+
+            &-container{
+                top: 0;
+                border-top: 1px solid #EAEAEA;
+                border-bottom: 1px solid #EAEAEA;
+            }
+        }
+
+        &-text{
+            max-width: 80%;
+        }
+
+        &-seconddevider{
+            width: 90%;
+        }
+
+        &-choose__parameters{
+            padding-bottom: 48px;
+        }
+    }
+
+    .products__product-page {
+        padding-top: 55px;
+        padding-bottom: 96px;
+    }
 }

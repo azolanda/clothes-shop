@@ -541,7 +541,7 @@ summary::-webkit-details-marker {
     }
 }
 
-@media(max-width: 1200px) and (min-width: 1041px){
+@media(max-width: 1200px){
     .center{
         padding-left: calc(50% - 500px);
         padding-right: calc(50% - 500px);
@@ -560,9 +560,25 @@ summary::-webkit-details-marker {
     .products__container{
         grid-template-columns: repeat(3, 31.3%);
     }
+
+    .contact__us{
+        justify-content: space-around;
+
+        &-form__container{
+            width: fit-content;
+            max-width: 557px;
+        }
+    }
 }
 
 @media(max-width: 1040px){
+    .center{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media(max-width: 1024px){
     .center{
         padding-left: calc(50% - 360px);
         padding-right: calc(50% - 360px);

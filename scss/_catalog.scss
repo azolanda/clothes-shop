@@ -179,3 +179,31 @@
         }
     }
 }
+
+@media(max-width: 1024px){
+    .filters{
+        padding-top: 24px;
+        margin-bottom: 0;
+        grid-template-columns: repeat(2, 48.98%);
+        grid-column-gap: 16px;
+
+        &__group{
+            justify-content: flex-end;
+        }
+    }
+
+    .products{
+        &-catalog{
+            padding-bottom: 64px;
+        }
+        
+        &__container{
+            grid-row-gap: 16px;
+
+            &-catalog{
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}

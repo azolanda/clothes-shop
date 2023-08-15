@@ -164,3 +164,35 @@
         padding-right: 23px;
     }
 }
+
+@media(max-width: 1024px){
+    .registration{
+        &__content{
+            padding-top: 40px;
+            gap: 64px;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(44%, 360px));
+        }
+
+        &__right{
+            font-size: 16px;
+            max-width: fit-content;
+        }
+
+        &__text{
+            padding-top: 32px;
+        }
+
+        &__radio {
+            padding-top: 31px;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .registration{
+        &__content{
+            gap: 22px;
+        }
+    }
+}
