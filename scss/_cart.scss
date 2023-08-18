@@ -281,12 +281,13 @@
 
         &-img__box {
             width: unset;
+            max-width: 38.4vw;
             align-self: last baseline;
         }
 
         &-description {
             padding: 14px 12px 14px 17px;
-            gap: 31px;
+            gap: 26px;
             width: 100%;
         }
 
@@ -331,16 +332,17 @@
             display: flex;
         }
 
-        &-form__fieldset {
-            margin: auto;
-            max-width: 360px;
-            display: flex;
-        }
-
         &-form__group {
-            grid-template-columns: repeat(1, auto);
-            width: 100%;
+            grid-template-columns: repeat(1, minmax(200px,360px));
             gap: 48px;
         }
+    }
+}
+
+@media(max-width: 374px){
+    .cart__content-button__box{
+        display: grid;
+        justify-content: center;
+        gap: 16px;
     }
 }

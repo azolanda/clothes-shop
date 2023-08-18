@@ -1130,7 +1130,7 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
 .filters__details-content {
   position: absolute;
   top: -17px;
-  z-index: 1;
+  z-index: 2;
   background: #fff;
   background: #fff;
   padding: 46px 17px 17px;
@@ -1157,6 +1157,7 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
 .filters__details[open] .filters__heading {
   color: #EF5B70;
   padding-left: 16px;
+  z-index: 3;
 }
 .filters__details[open] path:not(.filters__group path) {
   fill: #EF5B70;
@@ -1180,7 +1181,7 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   align-items: center;
 }
 .filters__svg_main {
-  z-index: 2;
+  z-index: 3;
 }
 .filters__heading {
   color: #000;
@@ -1293,8 +1294,10 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
 @media (max-width: 767px) {
   .filters {
     display: flex;
-    justify-content: center;
-    gap: 61.5px;
+    justify-content: space-between;
+    max-width: 360px;
+    margin: auto;
+    box-sizing: content-box;
   }
   .filters__heading {
     display: none;
@@ -1314,6 +1317,9 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   .filters__group-heading {
     font-size: 12px;
   }
+  .filters__group-size_catalog {
+    right: 0;
+  }
   .filters__summary {
     gap: 9px;
   }
@@ -1330,6 +1336,7 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   }
   .filters__details-content {
     width: 360px;
+    max-width: calc(100vw - 32px);
   }
   .filters__subheading {
     width: 100%;
@@ -1578,11 +1585,12 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   }
   .cart__content-img__box {
     width: unset;
+    max-width: 38.4vw;
     align-self: last baseline;
   }
   .cart__content-description {
     padding: 14px 12px 14px 17px;
-    gap: 31px;
+    gap: 26px;
     width: 100%;
   }
   .cart__content-heading {
@@ -1618,15 +1626,16 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
     max-width: 360px;
     display: flex;
   }
-  .cart__content-form__fieldset {
-    margin: auto;
-    max-width: 360px;
-    display: flex;
-  }
   .cart__content-form__group {
-    grid-template-columns: repeat(1, auto);
-    width: 100%;
+    grid-template-columns: repeat(1, minmax(200px, 360px));
     gap: 48px;
+  }
+}
+@media (max-width: 374px) {
+  .cart__content-button__box {
+    display: grid;
+    justify-content: center;
+    gap: 16px;
   }
 }
 .registration__content {
