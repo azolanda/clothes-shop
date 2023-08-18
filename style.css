@@ -1760,7 +1760,7 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   padding-bottom: 16px;
 }
 .registration__li::before {
-  content: url(../img/registration_marker.svg);
+  content: url(img/registration_marker.svg);
   padding-right: 23px;
 }
 
