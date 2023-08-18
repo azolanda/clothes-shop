@@ -1572,6 +1572,10 @@ summary, slot[name=internal-main-summary]::slotted(summary) {
   .cart__content-items {
     gap: 32px;
   }
+  .cart__content-item {
+    max-width: 560px;
+    margin: auto;
+  }
   .cart__content-img__box {
     width: unset;
     align-self: last baseline;
