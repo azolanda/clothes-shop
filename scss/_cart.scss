@@ -258,3 +258,85 @@
         }
     }
 }
+
+@media(max-width: 767px){
+    .breadcrumbs_cart{
+        padding-top: 125px;
+        padding-bottom: 69px;
+    }
+
+    .cart__content {
+        padding-top: 39px;
+        padding-bottom: 96px;
+        gap: 48px;
+
+        &-items {
+            gap: 32px;
+        }
+
+        &-img__box {
+            width: unset;
+            align-self: last baseline;
+        }
+
+        &-description {
+            padding: 14px 12px 14px 17px;
+            gap: 31px;
+            width: 100%;
+        }
+
+        &-heading{
+            font-size: 16px;
+            padding-bottom: 26px;
+            max-width: 144px;
+        }
+
+        &-text{
+            font-size: 14px;
+
+            &:not(:last-child) {
+                padding-bottom: 4px;
+            }
+        }
+
+        &-quantity {
+            padding: 1px 9px;
+        }
+
+        &-close{
+            width: 10px;
+            height: 11px;
+        }
+
+        &-button__box {
+            padding-top: 30px;
+            gap: 8px;
+            max-width: 358px;
+            margin: auto;
+            justify-content: space-between;
+        }
+
+        &-button {
+            font-size: 12px;
+            padding: 10px 18px;
+        }
+
+        &-form{
+            margin: auto;
+            max-width: 360px;
+            display: flex;
+        }
+
+        &-form__fieldset {
+            margin: auto;
+            max-width: 360px;
+            display: flex;
+        }
+
+        &-form__group {
+            grid-template-columns: repeat(1, auto);
+            width: 100%;
+            gap: 48px;
+        }
+    }
+}

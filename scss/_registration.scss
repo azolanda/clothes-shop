@@ -78,20 +78,9 @@
         }
     }
 
-    &__radio{
-        padding-top: 34px;
-        padding-bottom: 34px;
-        font-size: 11px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        cursor: pointer;
-    }
-
     &__label{
-        cursor: pointer;
-
         all: unset;
+        cursor: pointer;
 
         &:not(:last-child){
             padding-right: 10px;
@@ -104,6 +93,16 @@
         &:hover .registration__input-radio{
             border-color: #F16D7F;
         }
+    }
+
+    &__radio{
+        padding-top: 34px;
+        padding-bottom: 34px;
+        font-size: 11px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
     }
 
     &__button{
@@ -193,6 +192,16 @@
     .registration{
         &__content{
             gap: 22px;
+        }
+    }
+}
+
+@media(max-width: 767px){
+    .registration{
+        &__content{
+            grid-template-columns: repeat(1,minmax(auto,360px));
+            justify-content: center;
+            gap: 40px;
         }
     }
 }
